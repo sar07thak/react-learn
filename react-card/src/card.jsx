@@ -5,6 +5,9 @@ export const Card = () => {
         <>
           <CardOverview/>
           <CardOverview/>
+          <CardOverview/>
+          <CardOverview/>
+          <CardOverview/>
         </>
     )
 }
@@ -20,7 +23,7 @@ const CardOverview = () => {
     characters, the series explores power, loyalty, and the harsh costs
     of ambition.`;
 
-    let age = 14 ;
+    let age = 20  ;
     // let canWatch = "not available" ;
     // if ( age >= 18) {
     //     canWatch = "available";
