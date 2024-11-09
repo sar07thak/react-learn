@@ -6,7 +6,7 @@ import { Card , Footer }  from './card.jsx';
 import App from './App.jsx';
 import Condition from './conditional.jsx' ;
 import { MovieSeries } from './series.jsx';
-import Profile from './components/new.jsx';
+import Profile from './components/profile.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -14,7 +14,7 @@ createRoot(document.getElementById('root')).render(
     {/* <Card/> */}
     {/* <Footer/> */}
     {/* <Condition/> */}
-    {/* <MovieSeries /> */}
-    <Profile/>
+    <MovieSeries />
+    {/* <Profile/> */}
   </StrictMode>,
 )
