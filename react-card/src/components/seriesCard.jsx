@@ -1,7 +1,7 @@
 export const Seriescard = ( {curElem } ) => {
     return(
         <li id="key" className='min-w-[250px] h-[30em]  w-[100%] font-mono flex flex-col justify-between items-center rounded-md shadow-md shadow-blue-600'>
-        <div className="mb-16 p-1 h-40  w-[70%]  ">
+        <div className="mb-16 p-1 h-40  w-[70%]">
             <img src={curElem.img_url} alt="Game of Thrones" className=" w-[100%]  object-cover " />
         </div>
         <h1 className=" text-lg   text-center font-bold">Name : {curElem.name}</h1>
@@ -17,4 +17,3 @@ export const Seriescard = ( {curElem } ) => {
       )
 }
 
-// w-36 p-1 bg-blue-600 text-white rounded-lg text-lg mt-1
