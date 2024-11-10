@@ -8,7 +8,7 @@ import Condition from './conditional.jsx' ;
 import { MovieSeries } from './series.jsx';
 import Profile from './components/profile.jsx';
 import { Eventhandleing } from './components/eventHandling.jsx';
-
+import { EventProps } from './components/eventProps.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -18,6 +18,7 @@ createRoot(document.getElementById('root')).render(
     {/* <Condition/> */}
     {/* <MovieSeries /> */}
     {/* <Profile/> */}
-    <Eventhandleing/>
+    {/* <Eventhandleing/> */}
+    <EventProps/>
   </StrictMode>,
 )
