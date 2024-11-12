@@ -10,7 +10,7 @@ import Profile from './components/profile.jsx';
 import { Eventhandleing } from './components/eventHandling.jsx';
 import { EventProps } from './components/eventProps.jsx';
 import { State } from './components/hooks/state.jsx';
-
+import { DerivedState } from './components/hooks/hooksChallege.jsx';
 
 
 createRoot(document.getElementById('root')).render(
@@ -23,6 +23,7 @@ createRoot(document.getElementById('root')).render(
     {/* <Profile/> */}
     {/* <Eventhandleing/> */}
     {/* <EventProps/> */}
-    <State />
+    {/* <State /> */}
+    <DerivedState/>
   </StrictMode>,
 )
