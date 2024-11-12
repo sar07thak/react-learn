@@ -2,9 +2,6 @@ import gotImage from "./assets/got.jpg"
 
 export const Card = ({name}) => {
 
-    
-
-    
 return(
 <>
    <div className="flex justify-center items-center  bg-slate-600">
