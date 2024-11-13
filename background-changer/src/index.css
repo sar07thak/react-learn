@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.ON {
+  background-color: #22C55E;
+  transform: translateX(120px);
+}
+
+.OFF{
+  background-color: #EF4444;
+  transform: translateX(-12px);
+}
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
