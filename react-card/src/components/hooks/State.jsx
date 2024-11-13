@@ -32,6 +32,7 @@ export const State = () =>{
         }
          
     }
+
     return(
         <>
         <div className="flex flex-col bg-slate-700 text-white justify-center items-center h-screen">
