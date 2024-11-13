@@ -7,7 +7,7 @@ export const App = () => {
   
   return(
     <>
-      <div className="h-screen flex  flex-col justify-center items-center text-white duration-300" style={{backgroundColor:color}}>
+      <div className="h-screen flex  flex-col justify-center items-center text-white duration-300 shadow-xl shadow-indigo-500/40 " style={{backgroundColor:color}}>
         <h1 className="mb-2 text-2xl ">Background-Changer</h1>
         <div className="bg-white flex w-[80%]  justify-evenly p-4 rounded-md flex-wrap gap-0.5">
           <button className="relative z-0 rounded bg-red-500 px-10 py-3 transition-[all_0.3s_ease] after:absolute after:left-0 after:top-0 after:-z-10 after:h-full after:w-0 after:rounded after:bg-red-700 after:transition-[all_0.3s_ease]  hover:after:w-full" onClick={() => {
@@ -25,7 +25,7 @@ export const App = () => {
           <button className="relative z-0 rounded bg-slate-500 px-10 py-3 transition-[all_0.3s_ease] after:absolute after:left-0 after:top-0 after:-z-10 after:h-full after:w-0 after:rounded after:bg-slate-700 after:transition-[all_0.3s_ease]  hover:after:w-full" onClick={()=>{
             setColor("#64748B");
           }}>Grey</button>
-          <button className="relative z-0 rounded text-black hover:text-white bg-white px-10 py-3 transition-[all_0.3s_ease] after:absolute after:left-0 after:top-0 after:-z-10 after:h-full after:w-0 after:rounded after:bg-slate-800 after:transition-[all_0.3s_ease]  hover:after:w-full" onClick={()=>{
+          <button className="relative z-0 rounded text-black hover:text-white bg-white px-10 py-3 transition-[all_0.3s_ease] after:absolute after:left-0 after:top-0 after:-z-10 after:h-full after:w-0 after:rounded after:bg-slate-800 after:transition-[all_0.3s_ease] hover:after:w-full" onClick={()=>{
             setColor("white");
           }}>White</button>
           <button className="relative z-0 rounded bg-purple-500 px-10 py-3 transition-[all_0.3s_ease] after:absolute after:left-0 after:top-0 after:-z-10 after:h-full after:w-0 after:rounded after:bg-purple-700 after:transition-[all_0.3s_ease]  hover:after:w-full" onClick={()=>{
