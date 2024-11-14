@@ -30,7 +30,7 @@ export const Toggle = () => {
         <div className="bg-slate-950  flex flex-col h-screen justify-center items-center text-white" >
             <h1 className="text-4xl font-mono mb-5 flex gap-4">Toggle button <IoIosSwitch /></h1>
             <div className="flex items-center  justify-between rounded-full w-60 p-8" style={{backgroundColor:ToggleColor}}>
-                <div className={` border-4 border-slate-800  rounded-full p-5 duration-500 ${CheckISon}`} style={{backgroundColor:ToggleColor}} onClick={handleBtn} > {CheckISon}</div>
+                <div className={` border-4 border-slate-800  rounded-full p-5 duration-500 ${CheckISon}`} style={{backgroundColor:ToggleColor}} onClick={handleBtn}> {CheckISon}</div>
             </div>
         </div>
         </>
