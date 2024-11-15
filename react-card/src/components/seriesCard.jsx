@@ -12,7 +12,6 @@ export const Seriescard = ( {curElem } ) => {
         <p>Cast : {curElem.cast}</p>
         <a href={curElem.watch_url}><button className={curElem.rating <=8.5 ? 'w-36 p-1 bg-orange-400 cursor-pointer hover:bg-orange-600 text-white rounded-lg text-lg mt-1' : 'w-36 p-1 cursor-pointer hover:bg-green-600 bg-green-400 font-medium text-white rounded-lg text-lg mt-1'}>Watch-Now</button></a> 
         </div>
-        
         </li>
       )
 }
