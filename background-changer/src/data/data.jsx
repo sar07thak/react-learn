@@ -1,4 +1,4 @@
-[
+export const Data = [
     {
       "name": "Ode to Mathematics",
       "artist": "Alvaro Hernandez",
