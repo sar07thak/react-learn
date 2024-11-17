@@ -58,7 +58,7 @@ function Profile() {
   }
   
   export default Profile;
-  
+  // ? meethod - 1 passing props into components 
   // function ProfileCard(props) {
   //     const { name, age, greeting, children } = props;
   //   return (
@@ -70,9 +70,8 @@ function Profile() {
   //     </>
   //   );
   // }
-
-
   
+  // ? method -2 of passing props into component 
   function ProfileCard({ name, age, greeting, children }) {
     // const { name, age, greeting, children } = props;    
   return (
@@ -85,7 +84,7 @@ function Profile() {
   );
 }
 
- // ? another of passing props into the function
+ // ? another of passing props into the component
 
 // function ProfileCard(props){
 //     return(
