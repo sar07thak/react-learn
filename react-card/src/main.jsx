@@ -20,10 +20,10 @@ createRoot(document.getElementById('root')).render(
     {/* <Footer/> */}
     {/* <Condition/> */}
     {/* <MovieSeries /> */}
-    {/* <Profile/> */}
+    <Profile/>
     {/* <Eventhandleing/> */}
     {/* <EventProps/> */}
-    <State />
+    {/* <State /> */}
     {/* <DerivedState/> */}
   </StrictMode>,
 )

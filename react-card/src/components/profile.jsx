@@ -59,17 +59,31 @@ function Profile() {
   
   export default Profile;
   
+  // function ProfileCard(props) {
+  //     const { name, age, greeting, children } = props;
+  //   return (
+  //     <>
+  //       <h2>Name: {name}</h2>
+  //       <p>Age: {age}</p>
+  //       <p>{greeting}</p>
+  //       <div>{children}</div>
+  //     </>
+  //   );
+  // }
+
+
+  
   function ProfileCard({ name, age, greeting, children }) {
-    //   const { name, age, greeting, children } = props;
-    return (
-      <>
-        <h2>Name: {name}</h2>
-        <p>Age: {age}</p>
-        <p>{greeting}</p>
-        <div>{children}</div>
-      </>
-    );
-  }
+    // const { name, age, greeting, children } = props;
+  return (
+    <>
+      <h2>Name: {name}</h2>
+      <p>Age: {age}</p>
+      <p>{greeting}</p>
+      <div>{children}</div>
+    </>
+  );
+}
 
  // ? another of passing props into the function
 
