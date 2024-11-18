@@ -20,7 +20,7 @@ export const ToDoList = () => {
     
     if ( !userInput) return alert("Enter some tasks") ;
       
-    setTask( (prevTask) => [...prevTask , userInput.trim() ])
+    setTask( (prevTask) => [...prevTask , userInput ])
       
     setInput("");
   }
@@ -29,22 +29,31 @@ useEffect(()=>{
   const interval = setInterval(() => {
     const date = new Date() ;
     const formattedDate = date.toLocaleDateString();
-  
     const formattedTime = date.toLocaleTimeString();
     setDateTime(`${formattedDate}-${formattedTime}`)
-    
     
   }, 1000);
 
   return () => clearInterval(interval);
-})
+},[])
 
 
-  
+
+const handleTODOdel = ( value ) => {
+  console.log(value);
+ const updateTask = task.filter((currentTask) => {
+  return currentTask !== value ;
+ })
+  setTask(updateTask) ;
+}
+
+const handleClearBtn = () => {
+   return setTask([]);
+}
 
   return(
     <>
-     <div class="container min-h-screen w-screen bg-indigo-300 flex flex-col p-10 items-center  font-mono ">
+     <div class="container min-h-screen w-[100%] bg-indigo-300 flex flex-col p-10 items-center  font-mono ">
       <div>
           <header className="text-center mb-5">
             <h1 className="text-6xl font-bold text-white"> To-Do-List</h1>
@@ -67,7 +76,7 @@ useEffect(()=>{
              className="text-white relative z-0 rounded-r-md bg-indigo-600
               p-2.5 w-36 transition-[all_0.3s_ease] after:absolute after:left-0
               after:top-0 after:-z-10 after:h-full after:w-0 after:rounded after:bg-indigo-800 
-              after:transition-[all_0.3s_ease]  hover:after:w-full">
+              after:transition-[all_0.3s_ease]  hover:after:w-full duration-200">
                Add-Task
             </button>
               </div>
@@ -86,12 +95,13 @@ useEffect(()=>{
                          <button className="text-white relative z-0  rounded-md bg-teal-400
                          p-2  transition-[all_0.3s_ease] after:absolute after:left-0
                          after:top-0 after:-z-10 after:h-full after:w-0 after:rounded after:bg-teal-700 
-                         after:transition-[all_0.3s_ease]  hover:after:w-full" > <CiCircleCheck /> </button>
+                         after:transition-[all_0.3s_ease]  hover:after:w-full duration-200" > <CiCircleCheck /> </button>
 
                          <button className="text-white relative z-0 rounded-md bg-red-400
                          p-2.5  transition-[all_0.3s_ease] after:absolute after:left-0
                          after:top-0 after:-z-10 after:h-full after:w-0 after:rounded after:bg-red-600 
-                         after:transition-[all_0.3s_ease]  hover:after:w-full"> <TiDeleteOutline /> </button>
+                         after:transition-[all_0.3s_ease]  hover:after:w-full duration-200" 
+                         onClick={() => handleTODOdel(curTask)}> <TiDeleteOutline /> </button>
                          </div>
                       </li>
                       </>
@@ -99,6 +109,12 @@ useEffect(()=>{
                   })
                 }
               </ul>
+              <div className="flex justify-center mt-6">
+                <button className="text-white relative z-0  rounded-md bg-orange-400
+                         p-2  transition-[all_0.3s_ease] after:absolute after:left-0
+                         after:top-0 after:-z-10 after:h-full after:w-0 after:rounded after:bg-orange-700 
+                         after:transition-[all_0.3s_ease]  hover:after:w-full duration-200" onClick={handleClearBtn} >Clear-All</button>
+              </div> 
             </section>
           </section>
       </div>

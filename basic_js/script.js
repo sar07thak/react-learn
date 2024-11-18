@@ -98,7 +98,7 @@ const Data = [
     // const {id , name ,type ,genre,language} = movie ;
     // console.log(id,type,name,genre,language);
     
-    // ?  OBJECT DISTRUCTURING
+    // ?  ARRAY DISTRUCTURING
     
     const movie = Data[4] ;
     const movieActor = movie.actors_api.actors;
@@ -113,3 +113,14 @@ const Data = [
     // const [primaryActor ,secondaryActor ] = movieActor ;
 
     // console.log(primaryActor,secondaryActor);
+
+    // ? REST / SPREAD OPERATOR => are those operator which shows the remaining values in the array  and return array .
+
+    // const [primaryActor , ...otherActor ] = movieActor ;
+    // console.log(primaryActor , otherActor);
+    
+
+    // const array = [1,2,3,4,5,6,7,8,9,0];
+    // const [primary ,secondary , ...other ] = array ;
+    // console.log(primary , secondary , other);
+    
