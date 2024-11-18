@@ -81,8 +81,8 @@ const handleClearBtn = () => {
             </button>
               </div>
             </form>
+            </section>
             <section>
-
               <ul>
                 {
                   task.map((curTask , index) => {
@@ -116,7 +116,6 @@ const handleClearBtn = () => {
                          after:transition-[all_0.3s_ease]  hover:after:w-full duration-200" onClick={handleClearBtn} >Clear-All</button>
               </div> 
             </section>
-          </section>
       </div>
     </div>
     </>
