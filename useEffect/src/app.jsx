@@ -1,4 +1,4 @@
-import { useCallback, useState , useEffect } from "react";
+import { useCallback, useState , useEffect , useRef} from "react";
 
 export const App = () => {
 
@@ -6,6 +6,16 @@ export const App = () => {
     const [password,setpassword ] = useState("");
     const [numallowed ,setnumAllowed] = useState(false);
     const [characterAllowed , setCharAllow] = useState(false);
+
+
+    // ? password ref
+
+    const passwordRef = useRef(null) ;
+
+    const copyPassword = useCallback(() => {
+        passwordRef.current?.select();
+        window.navigator.clipboard.writeText(password);
+    },[password])
 
     const passwordGenerator = useCallback(()=>{
         let pass = "";
@@ -36,7 +46,9 @@ export const App = () => {
                 value={password}
                 className="outline-none text-purple-600 font-semibold w-full py-1 px-3"
                 placeholder="password...." 
-                readOnly/>
+                readOnly
+                ref={passwordRef}
+                onClick={copyPassword}/>
                 <button className="text-white w-44 relative z-0 rounded-md bg-red-400
                          p-2.5  transition-[all_0.3s_ease] after:absolute after:left-0
                          after:top-0 after:-z-10 after:h-full after:w-0 after:rounded after:bg-red-600 
@@ -51,7 +63,7 @@ export const App = () => {
                     min={6}
                     max={15}
                     value={length}
-                    className="cursor-pointer"
+                    className="cursor-pointer duration-300"
                     onChange={(e) => {
                         setlength(e.target.value);
                     }}/>
