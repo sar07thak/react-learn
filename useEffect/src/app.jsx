@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useState , useEffect } from "react";
 
 export const App = () => {
 
@@ -14,26 +14,27 @@ export const App = () => {
         if ( numallowed) str = str + "1234567890"; 
         if(characterAllowed) str = str + "!@#$%^&*_+-=|?{}[]()~" ;
 
-        for (let index = 1; index <=  array.length ; index++) {
+        for (let index = 1; index <= length ; index++) {
            let char = Math.floor(Math.random()*str.length + 1) ;
-            pass = str.charAt(char);
+            pass += str.charAt(char);
 
         }
-
         setpassword(pass);
 
+    } , [length , numallowed , characterAllowed , setpassword])
 
-    } ,[length , numallowed , characterAllowed , setpassword])
-
+    useEffect(() => {
+        passwordGenerator();
+    },[length , numallowed , characterAllowed , passwordGenerator])
     return(
         <>
-          <div className="w-[65%] mx-auto shadow-xl px-4 my-8 bg-purple-700 rounded-md ">
+          <div className="w-[69%] mx-auto shadow-xl px-4 my-8 bg-purple-700 rounded-md ">
             <h1 className="text-2xl text-center my-3">Password-generator</h1>
             <div className="flex rounded-lg overflow-hidden mb-4">
                 <input 
                 type="text"
                 value={password}
-                className="outline-none w-full py-1 px-3"
+                className="outline-none text-purple-600 font-semibold w-full py-1 px-3"
                 placeholder="password...." 
                 readOnly/>
                 <button className="text-white w-44 relative z-0 rounded-md bg-red-400
@@ -48,7 +49,7 @@ export const App = () => {
                     <input 
                     type="range" 
                     min={6}
-                    max={100}
+                    max={15}
                     value={length}
                     className="cursor-pointer"
                     onChange={(e) => {
@@ -62,7 +63,7 @@ export const App = () => {
                 defaultChecked={numallowed}
                 id="nmberInput"
                 onChange={(e) => {
-                    setnumAllowed((prev) = !prev)
+                    setnumAllowed((prev) => !prev)
                 }}/>
                 <label> Integer </label>
             </div>
@@ -71,7 +72,7 @@ export const App = () => {
                 defaultChecked={characterAllowed}
                 id="charInput"
                 onChange={(e) => {
-                    setCharAllow((prev) = !prev)
+                    setCharAllow((prev) => !prev)
                 }}/>
                 <label> Character </label>
             
