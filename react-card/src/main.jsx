@@ -4,7 +4,6 @@ import "./index.css"
 // import './style.css' ;
 import { Card , Footer }  from './card.jsx';
 import App from './App.jsx';
-import Condition from './conditional.jsx' ;
 import { MovieSeries } from './series.jsx';
 import Profile from './components/profile.jsx';
 import { Eventhandleing } from './components/eventHandling.jsx';
@@ -18,9 +17,8 @@ createRoot(document.getElementById('root')).render(
     {/* <App/> */}
     {/* <Card/> */}
     {/* <Footer/> */}
-    {/* <Condition/> */}
     {/* <MovieSeries /> */}
-    <Profile/>
+    {/* <Profile/> */}
     {/* <Eventhandleing/> */}
     {/* <EventProps/> */}
     {/* <State /> */}

@@ -4,7 +4,7 @@
 //* Challenge Details:
 
 //? Create a Main Component: Profile
-// This component should render multiple ProfileCard components, each with different user data and children elements.
+// ! This component should render multiple ProfileCard components, each with different user data and children elements.
 
 //? Create a ProfileCard Component:
 // This component should accept props for the user's name, age, and a personalized greeting message (as JSX).
@@ -72,7 +72,7 @@ function Profile() {
   // }
   
   // ? method -2 of passing props into component 
-  function ProfileCard({ name, age, greeting, children }) {
+  function ProfileCard({ name, age, greeting , children }) {
     // const { name, age, greeting, children } = props;    
   return (
     <>

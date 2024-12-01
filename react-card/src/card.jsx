@@ -6,8 +6,6 @@ export const Card = () => {
           <CardOverview/>
           <CardOverview/>
           <CardOverview/>
-          <CardOverview/>
-          <CardOverview/>
         </>
     )
 }
