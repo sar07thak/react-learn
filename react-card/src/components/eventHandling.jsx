@@ -12,7 +12,7 @@ export const Eventhandleing = () => {
         <>
         <div className="flex justify-center items-center h-screen">
           <button onClick={print} > click-me</button>
-          <button onSubmit={handleSubmit}>submit-please</button>
+          <button onClick={handleSubmit}>submit-please</button>
         </div>
         </>
     )
