@@ -4,10 +4,15 @@ export const Eventhandleing = () => {
         console.log("hello world");
     }
 
+    const handleSubmit = () => {
+        console.log("submit cliked");
+    }
+    
     return(
         <>
         <div className="flex justify-center items-center h-screen">
           <button onClick={print} > click-me</button>
+          <button onSubmit={handleSubmit}>submit-please</button>
         </div>
         </>
     )

@@ -19,7 +19,7 @@ createRoot(document.getElementById('root')).render(
     {/* <Footer/> */}
     {/* <MovieSeries /> */}
     {/* <Profile/> */}
-    {/* <Eventhandleing/> */}
+    <Eventhandleing/>
     {/* <EventProps/> */}
     {/* <State /> */}
     {/* <DerivedState/> */}
