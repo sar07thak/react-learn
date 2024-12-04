@@ -39,7 +39,7 @@ export const App = () => {
     },[length , numallowed , characterAllowed , passwordGenerator])
     return(
         <>
-          <div className="w-[69%] mx-auto shadow-xl px-4 my-8 bg-purple-700 rounded-md ">
+          <div className="w-[69%] mx-auto shadow-xl px-4 my-8  rounded-md ">
             <h1 className="text-2xl text-center my-3">Password-generator</h1>
             <div className="flex rounded-lg overflow-hidden mb-4">
                 <input 
