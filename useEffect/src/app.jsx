@@ -1,5 +1,7 @@
 import { useCallback, useState , useEffect , useRef} from "react";
 
+// import { useCallback, useState } from "react";
+
 export const App = () => {
 
     const [length , setlength] = useState(8);
@@ -14,6 +16,7 @@ export const App = () => {
 
     const copyPassword = useCallback(() => {
         passwordRef.current?.select();
+        alert("password copied");
         window.navigator.clipboard.writeText(password);
     },[password])
 
@@ -27,10 +30,8 @@ export const App = () => {
         for (let index = 1; index <= length ; index++) {
            let char = Math.floor(Math.random()*str.length + 1) ;
             pass += str.charAt(char);
-
         }
         setpassword(pass);
-
     } , [length , numallowed , characterAllowed , setpassword])
 
     useEffect(() => {
@@ -87,7 +88,6 @@ export const App = () => {
                     setCharAllow((prev) => !prev)
                 }}/>
                 <label> Character </label>
-            
             </div>
            </div>
           </div>

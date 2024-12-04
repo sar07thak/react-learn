@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 export const Content = () => {
+    // ?  increment and decrement 
     let [counter , setcounter] = useState(6);
 
    const addvalue = ()=>{
@@ -26,6 +27,7 @@ export const Content = () => {
     }
    }
 
+   // ? delete and set value
    const [text,setText] = useState("");
    const handleChange = (e) => {
     setText(e.target.value);
@@ -61,9 +63,6 @@ export const Content = () => {
                     reset
                 </button>
             </div>
-            
-
-
             </div>
 
         </div>
