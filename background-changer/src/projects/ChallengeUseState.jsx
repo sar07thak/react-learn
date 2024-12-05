@@ -56,5 +56,3 @@ export const Challenge = () => {
         </>
     );
 }
-            // <div className="f bg-blue-400 flex flex-col justify-center items-center gap-4">
-            // </div>
