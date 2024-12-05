@@ -5,13 +5,17 @@ import { App } from './App'
 import { Toggle } from './components/toggle'
 import { DisplayArtworks } from './components/display_data'
 import { Challenge } from './projects/ChallengeUseState'
-import { LoginForm } from './projects/loginForm'
+import { Registeraion} from './projects/RegistrationForm'
+import { LoginForm } from './projects/Login'
+
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <App /> */}
+  {/* <App /> */}
   {/* <Toggle /> */}
   {/* <DisplayArtworks/> */}
   {/* <Challenge/> */}
-  <LoginForm />
+  {/* <Registeraion /> */}
+  <LoginForm/>
   </StrictMode>,
 )

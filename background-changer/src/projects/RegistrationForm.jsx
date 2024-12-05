@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const LoginForm = () => {
+export const Registeraion = () => {
 
   // ?  in this we have uses 5 useState 
   let [firstname ,setFirstname] = useState("");
@@ -47,7 +47,7 @@ export const LoginForm = () => {
     return(
         <>
         <form 
-        className="bg-gray-200  flex justify-center p-2"
+        className="bg-gray-200  flex justify-center p-2 "
         onSubmit={handleSubmit}
         >
           <div className="flex  flex-col  items-center">
@@ -56,7 +56,7 @@ export const LoginForm = () => {
             ,My email address is <span className="text-blue-500 font-bold"> {email} </span>
             and my phone number is <span className="text-blue-500 font-bold">{phone}</span> 
          </p>
-         <div className=" flex flex-col  p-10  rounded-xl  shadow-2xl shadow-gray-600 w-[55%] bg-white ">
+         <div className=" flex flex-col  p-10  rounded-xl  shadow-2xl shadow-gray-600 w-[80%] bg-white ">
           <h1 className="font-bold text-3xl mb-3">Sign Up</h1>
           <p className="text-md text-gray-500 mb-5">please fill in this form to create an account.</p>
           <h2 className="font-semibold mb-.5 ">First Name</h2>
