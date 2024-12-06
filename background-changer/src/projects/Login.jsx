@@ -29,7 +29,7 @@ export const LoginForm = () => {
         <form 
         onSubmit={handlesubmit}
         className="bg-gray-200 h-screen flex justify-center items-center" >
-            <div className="bg-gray-300 w-[30%] flex flex-col justify-center  rounded-xl shadow-2xl p-10">
+            <div className="bg-gray-300 w-[50%] flex flex-col justify-center  rounded-xl shadow-2xl p-10">
                 <h1 className="font-bold mb-10 text-3xl">Login Page</h1>
                 
                 <h2 className="text-xl">Username :</h2>
