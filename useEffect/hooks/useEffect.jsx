@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 export const Byuseeffect = () => {
 
     let [count,setCount] = useState(0) ;
-    let [date ,setDate ] =useState(0) ;
+    let [date ,setDate ] = useState(0) ;
 
     const handleclick = () =>{ 
         count++;
