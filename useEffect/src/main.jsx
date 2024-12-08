@@ -7,7 +7,8 @@ import './index.css'
 // import { Byuseeffect } from '../hooks/useEffect'
 // import { Date } from '../hooks/useEffect'
 import { ChallengeEffect } from '../hooks/ChallengeUseEffect'
-
+import { UseRef } from '../hooks/useRef'
+import { UseId } from '../hooks/useId'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -16,6 +17,8 @@ createRoot(document.getElementById('root')).render(
     {/* <Challenge/> */}
     {/* <Byuseeffect/> */}
     {/* <Date/> */}
-    <ChallengeEffect />
+    {/* <ChallengeEffect /> */}
+    {/* <UseRef/> */}
+    <UseId/>
   </StrictMode>,
 )
