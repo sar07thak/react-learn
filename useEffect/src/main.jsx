@@ -9,6 +9,7 @@ import './index.css'
 import { ChallengeEffect } from '../hooks/ChallengeUseEffect'
 import { UseRef } from '../hooks/useRef'
 import { UseId } from '../hooks/useId'
+import { ParentComponent } from '../hooks/propsdrilling'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')).render(
     {/* <Date/> */}
     {/* <ChallengeEffect /> */}
     {/* <UseRef/> */}
-    <UseId/>
+    {/* <UseId/> */}
+    <ParentComponent/>
   </StrictMode>,
 )
