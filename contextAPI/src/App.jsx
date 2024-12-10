@@ -10,11 +10,13 @@ function App() {
 
 
   return (
+    <>
     <UsercontextProvider>
      <h1>react with chai</h1>
-     <Login/>
      <Profile/>
+     <Login/>
     </UsercontextProvider>
+    </>
 
   )
 }
