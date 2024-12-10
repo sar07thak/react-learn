@@ -4,6 +4,7 @@ import { BioContext } from './context/contextAPI'
 import { ContextProvider } from './context/contextAPI'
 import { Home } from './context/home'
 import { About } from './context/about'
+import { Services } from './context/services'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <ContextProvider>
       <Home/>
       <About/>
+      <Services/>
     </ContextProvider>
     </>
   )

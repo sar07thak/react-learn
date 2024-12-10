@@ -10,8 +10,6 @@ import { ChallengeEffect } from '../hooks/ChallengeUseEffect'
 import { UseRef } from '../hooks/useRef'
 import { UseId } from '../hooks/useId'
 import { ParentComponent } from '../hooks/propsdrilling'
-import { Home } from '../contextAPI/home'
-import { BioProvider } from '../contextAPI'
 
 
 
@@ -25,7 +23,7 @@ createRoot(document.getElementById('root')).render(
     {/* <ChallengeEffect /> */}
     {/* <UseRef/> */}
     {/* <UseId/> */}
-    {/* <ParentComponent/> */}
+ 
    
   </StrictMode>,
 )
