@@ -10,6 +10,8 @@ import { ChallengeEffect } from '../hooks/ChallengeUseEffect'
 import { UseRef } from '../hooks/useRef'
 import { UseId } from '../hooks/useId'
 import { ParentComponent } from '../hooks/propsdrilling'
+import { Reducer } from '../hooks/useReducer'
+import { Memo } from '../hooks/useMemo'
 
 
 
@@ -23,7 +25,7 @@ createRoot(document.getElementById('root')).render(
     {/* <ChallengeEffect /> */}
     {/* <UseRef/> */}
     {/* <UseId/> */}
- 
-   
+    {/* <Reducer/> */}
+    <Memo/>
   </StrictMode>,
 )
