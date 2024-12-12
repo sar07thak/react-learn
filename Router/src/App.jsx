@@ -5,6 +5,7 @@ import Movie from './components/layout/Movie'
 import Contact from './components/layout/Contact'
 import Home from './components/layout/Home'
 import Applayout from './components/layout/Applayout'
+import Error from './components/layout/Error'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     {
       path : "/",
       element : <Applayout/>, 
+      errorElement : <Error/>,
       children : [
         {
           path: "/",
