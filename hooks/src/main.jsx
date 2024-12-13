@@ -11,8 +11,8 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
     {/* <Context/>  in this we tell the basic of Context */}
-    {/* <Parent/>  Project related to context*/}
+    <Parent/>  Project related to context
     {/* <UseEffect/> */}
-    <Callback/>
+    {/* <Callback/> */}
   </StrictMode>,
 )

@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
-import { About } from './components/layout/About'
-import Movie from './components/layout/Movie'
-import Contact from './components/layout/Contact'
-import Home from './components/layout/Home'
-import Applayout from './components/layout/Applayout'
-import Error from './components/layout/Error'
+import { About } from './components/About'
+import Movie from './components/Movie'
+import Contact from './components/Contact'
+import Home from './components/Home'
+import Applayout from './components/Applayout'
+import Error from './components/Error'
+import { GetMoviesdata } from './API/GetAPIdata'
 
 
 function App() {
@@ -14,8 +15,8 @@ function App() {
     {
       path : "/",
       element : <Applayout/>, 
-      errorElement : <Error/>,
-      children : [
+      errorElement : <Error/>, //errorElement for activating <Error/> components
+      children : [ // children for activating outlet
         {
           path: "/",
           element : <Home/>
@@ -26,7 +27,8 @@ function App() {
         },
         {
           path: "/movie",
-          element : <Movie/>
+          element : <Movie/>,
+          loader : GetMoviesdata , // loader key is for loading api and also for useLoader
         },
         {
           path: "/contact",
@@ -36,7 +38,7 @@ function App() {
     }
   ])
   return (
-    <div className='bg-lime-500 p-1.5 h-screen text-white'>
+    <div className='bg-lime-500 p-1.5  text-white'>
     <RouterProvider router={router} />
     </div>
   )

@@ -1,6 +1,7 @@
 import { createContext, useState } from "react"
 import { ChildA } from "./A";
 import { ChildC } from "./C";
+import { ChildD } from "./D";
 
 export const ThemeContext = createContext() ;
 
@@ -19,7 +20,8 @@ export const Parent  = ( )=> {
         className="h-screen text-black flex flex-col justify-center items-center">
         <ThemeContext.Provider value={{theme ,setTheme,name}}>
             {/* <ChildA /> */}
-            <ChildC />
+            {/* <ChildC /> */}
+            <ChildD/>
             
         </ThemeContext.Provider>
         </div>

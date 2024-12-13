@@ -17,7 +17,7 @@ const Header = () => {
         </div>
         <div className='bg-[#242424] shadow-black shadow-lg  rounded-lg flex justify-between p-5'>
             <p className='text-xl font-semibold font-mono'>WatchMovie</p>
-            <div className='w-72 flex justify-between font-mono '>
+            <div className='w-72 flex justify-between font-mono items-center '>
             <NavLink to="/">Home</NavLink>
             <NavLink to="/contact">Contact</NavLink>
             <NavLink to="/movie">Movie</NavLink>
