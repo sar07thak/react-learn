@@ -28,9 +28,9 @@ const Error = () => {
             {/* navigating through useNavigate  */}
         <button 
         onClick={handleback}
-        className=" p-2 bg-lime-600 text-sm hover:bg-red-400 duration-200 text-[#242424] rounded-lg mr-2 shadow-sm shadow-[#242424] font-bold ">Go back</button>
+        className=" p-2 bg-emerald-600 text-sm hover:bg-red-400 duration-200 text-[#242424] rounded-lg mr-2 shadow-sm shadow-[#242424] font-bold ">Go back</button>
             {/* naviigate using navlink */}
-        <NavLink to="/" className=" p-2 bg-lime-600 text-sm hover:bg-red-400 duration-200 text-[#242424] rounded-lg shadow-sm shadow-[#242424] font-bold ">Go back to Home Page....</NavLink>
+        <NavLink to="/" className=" p-2 bg-emerald-600 text-sm hover:bg-red-400 duration-200 text-[#242424] rounded-lg shadow-sm shadow-[#242424] font-bold ">Go back to Home Page....</NavLink>
         </div>
     </div>
   )

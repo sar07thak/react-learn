@@ -7,6 +7,8 @@ import Home from './components/Home'
 import Applayout from './components/Applayout'
 import Error from './components/Error'
 import { GetMoviesdata } from './API/GetAPIdata'
+import { MovieDetails } from './components/UI/MovieDetails'
+import { getMovieDetails } from './API/GetMovieDetails'
 
 
 function App() {
@@ -31,6 +33,11 @@ function App() {
           loader : GetMoviesdata , // loader key is for loading api and also for useLoader
         },
         {
+          path: "/movie/:movieID",
+          element : <MovieDetails/>,
+          loader : getMovieDetails
+        },
+        {
           path: "/contact",
           element : <Contact/>
         }
@@ -38,7 +45,7 @@ function App() {
     }
   ])
   return (
-    <div className='bg-lime-500 p-1.5  text-white'>
+    <div className='p-1.5 text-white'>
     <RouterProvider router={router} />
     </div>
   )
