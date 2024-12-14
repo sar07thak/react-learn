@@ -1,5 +1,5 @@
 import React from 'react'
-import { useLoaderData } from 'react-router-dom'
+import { useLoaderData,useParams } from 'react-router-dom'
 
 export const MovieDetails = () => {
     // const Params = useParams() ;
@@ -7,7 +7,7 @@ export const MovieDetails = () => {
     const moviedata = useLoaderData()
     // console.log(moviedata);
 
-    
+      
   const {
     Actor,
     Poster,

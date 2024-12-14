@@ -13,7 +13,7 @@ const Applayout = () => {
     }
     
   return (
-    <div>
+    <div className=''>
         <Header/>
         
         {/* outlet is used for taking the data of others components */}
