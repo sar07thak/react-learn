@@ -3,7 +3,7 @@ import { deletePost } from '../../api/Dataapi';
 
 
 export const Post = ({curdata,key}) => {
-    
+
     const {id,body,title} = curdata ;
     const [data ,setdata] =useState(curdata)
     const handleDltBtn = async(id) => {
