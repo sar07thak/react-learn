@@ -15,7 +15,7 @@ createRoot(document.getElementById('root')).render(
   {/* <Toggle /> */}
   {/* <DisplayArtworks/> */}
   {/* <Challenge/> */}
-  {/* <Registeraion /> */}
-  <LoginForm/>
+  <Registeraion />
+  {/* <LoginForm/> */}
   </StrictMode>,
 )

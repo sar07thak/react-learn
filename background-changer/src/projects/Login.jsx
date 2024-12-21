@@ -19,9 +19,9 @@ export const LoginForm = () => {
         const formdata = {
             username ,
             password,
-          };
-      
-          console.log(formdata);
+        };
+        
+        console.log(formdata);
     }
 
     return(
